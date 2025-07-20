@@ -1,4 +1,4 @@
-Profe lo unico que necesita es tener springboot y maven instalado, aca esta todo lo necesario para levantar la base de datos
+Profe lo unico que necesita es tener springboot y maven instalado, ademas, el iconico video del comercial de SAUL tuvo que ser removido... puesto que no el archivo era demasiado pesado para levantar el repositorio aca esta todo lo necesario para levantar la base de datos
 
 USE bettercallsaul;
 
