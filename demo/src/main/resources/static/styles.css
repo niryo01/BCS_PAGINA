@@ -1,0 +1,243 @@
+/* Esto quita la barra de desplazamiento vertical */
+html {
+  overflow-y: scroll;
+}
+
+body.with-navbar {
+  padding-top: 80px;
+}
+
+/* Específicamente ocultar la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 0px; /* Eliminar la barra de desplazamiento vertical */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Hacer el "thumb" (parte movible) transparente */
+}
+/* -----------------------------------------------------*/
+
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animate-on-scroll.animate__animated {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------FORMULARIO DE LOGIN-------------*/
+
+.container-login {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://images.unsplash.com/photo-1589395595558-c881c518350e?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-titulo-login {
+  color: yellow;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  font-family: "Comic Neue", cursive;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffc107;
+}
+
+.form-label {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+  padding: 10px;
+}
+
+.btn-login {
+  background-color: #ffc107;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-login:hover {
+  background-color: #e0a800;
+}
+
+/*--------------------------------------------------*/
+
+/*------------------ BARRA DE NAVEGACION-------------*/
+
+.custom-nav-principal {
+  margin-left: 0px;
+  margin-right: 120px;
+}
+
+.custom-nav .nav-link {
+  color: yellow;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------------CONTENIDO-------------------------------*/
+
+.BANNER {
+  aspect-ratio: 16 / 7; /* o 16/9, o lo que se ajuste mejor */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 75vh;
+}
+
+.background-grid2 {
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+.banner-text h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.cont1 {
+  margin-top: 20px; /*margin para separar */
+}
+
+.texto-fuente-Oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.texto-video {
+  font-size: 50px; /*unicamente para el tamaño del texto que esta al lado del titulo*/
+}
+
+.lista {
+  list-style: none;
+  font-size: 25px;
+}
+
+video {
+  border-radius: 12px;
+}
+
+.texto-subtitulos {
+  /*creo que lo voy a eliminar, verificar que clases lo usan */
+  color: red;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.texto-titulos {
+  color: red;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.texto-abogado-2 {
+  color: red;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.texto-abogado-3 {
+  color: red;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  font-style: normal;
+}
+
+.texto-cita {
+  color: red;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.texto-simple {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-warning {
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.input-cantidad {
+  width: 70px;
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------------*/
